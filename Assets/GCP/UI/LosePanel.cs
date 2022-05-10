@@ -21,7 +21,7 @@ namespace GCP.UI
         public Action OnResetGameClicked;
         public Action OnQuitGameClicked;
 
-        private void Start()
+        private void Awake()
         {
             loseLabel.SetText(loseText);
             retryButtonLabel.SetText(retryButtonText);

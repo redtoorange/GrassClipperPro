@@ -17,10 +17,6 @@ namespace GCP.Player
 
         private void Start()
         {
-            Debug.Log("Hello, World!");
-            Debug.Log("Hello, World!");
-            Debug.Log("Hello, World!");
-            Debug.Log("Hello, World!");
         }
     }
 }

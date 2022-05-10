@@ -16,7 +16,7 @@ namespace GCP.UI
         
         public Action OnNextLevelClicked;
 
-        private void Start()
+        private void Awake()
         {
             wonLabel.SetText(labelText);
             wonButtonLabel.SetText(buttonText);

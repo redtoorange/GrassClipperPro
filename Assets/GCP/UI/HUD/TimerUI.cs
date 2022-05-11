@@ -70,7 +70,7 @@ namespace GCP.UI
         public void Stop()
         {
             running = false;
-            animator.StopPlayback();
+            // animator.StopPlayback();
         }
 
         public void Start()
@@ -81,7 +81,7 @@ namespace GCP.UI
         public void Pause()
         {
             running = false;
-            animator.StopPlayback();
+            // animator.StopPlayback();
         }
 
         public void Resume()

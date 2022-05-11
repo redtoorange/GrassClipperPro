@@ -2,6 +2,7 @@
 using GCP.Player;
 using GCP.Timer;
 using GCP.UI;
+using GCP.UI.PauseMenu;
 using UnityEngine;
 
 namespace GCP.Orchestration
@@ -42,27 +43,42 @@ namespace GCP.Orchestration
             playerMovement = pc.GetComponent<PlayerMovement>();
             playerHealth = pc.GetComponent<PlayerHealth>();
             playerHealth.OnPlayerDied += HandlePlayerDied;
+
+            PauseMenuController.OnPauseMenuHidden += HandleGameUnpaused;
+            PauseMenuController.OnPauseMenuShown += HandleGamePaused;
         }
 
         private void HandleTimeOut()
         {
-            playerMovement.StopControl();
+            playerMovement.EnableControl();
             losePanel.gameObject.SetActive(true);
             timerManager.StopTimer();
         }
 
         private void HandlePlayerDied()
         {
-            playerMovement.StopControl();
+            playerMovement.EnableControl();
             losePanel.gameObject.SetActive(true);
             timerManager.StopTimer();
         }
 
         private void HandleGameWon()
         {
-            playerMovement.StopControl();
+            playerMovement.EnableControl();
             wonPanel.gameObject.SetActive(true);
             timerManager.StopTimer();
+        }
+
+        private void HandleGamePaused()
+        {
+            playerMovement.EnableControl();
+            timerManager.StopTimer();
+        }
+        
+        private void HandleGameUnpaused()
+        {
+            playerMovement.EnableControl(true);
+            timerManager.ResumeTimer();
         }
     }
 }

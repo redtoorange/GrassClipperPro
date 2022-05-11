@@ -11,7 +11,7 @@ namespace GCP.UI.MainMenu
 
         private MainMenuMain mainButtonPanel;
         private MovingPanel mainButtonPanelMover;
-        private MainMenuSettings settingsMenuPanel;
+        private SettingsMenu menuPanel;
         private MovingPanel settingsMenuPanelMover;
         private LevelManager levelManager;
 
@@ -26,10 +26,10 @@ namespace GCP.UI.MainMenu
 
             mainButtonPanelMover = mainButtonPanel.GetComponent<MovingPanel>();
 
-            settingsMenuPanel = GetComponentInChildren<MainMenuSettings>();
-            settingsMenuPanel.OnCancelClicked += TransitionToMainMenu;
+            menuPanel = GetComponentInChildren<SettingsMenu>();
+            menuPanel.OnCancelClicked += TransitionToMainMenu;
 
-            settingsMenuPanelMover = settingsMenuPanel.GetComponent<MovingPanel>();
+            settingsMenuPanelMover = menuPanel.GetComponent<MovingPanel>();
         }
 
         public void TransitionToSettings()

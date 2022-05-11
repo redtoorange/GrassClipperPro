@@ -22,9 +22,9 @@ namespace GCP.Player
             rigidbody = GetComponent<Rigidbody2D>();
         }
 
-        public void StopControl()
+        public void EnableControl(bool hasControl = false)
         {
-            hasControl = false;
+            this.hasControl = hasControl;
         }
 
         private void FixedUpdate()

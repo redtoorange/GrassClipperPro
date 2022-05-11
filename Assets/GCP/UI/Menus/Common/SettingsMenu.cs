@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GCP.UI.MainMenu
 {
-    public class MainMenuSettings : MonoBehaviour
+    public class SettingsMenu : MonoBehaviour
     {
         public Action OnSaveClicked;
         public Action OnCancelClicked;

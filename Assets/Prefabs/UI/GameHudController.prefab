@@ -466,53 +466,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8631594903557436733, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8631594903557436735, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
       propertyPath: m_Name
       value: TimerUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_fontSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 50e1eeba30481bd469538fe08fc5c8e5, type: 2}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_fontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2485901114100171475, guid: 50e1eeba30481bd469538fe08fc5c8e5, type: 2}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631594904358163076, guid: 43cc3956495a0cc4fbc47efae9c2194d, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

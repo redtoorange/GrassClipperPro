@@ -6476,6 +6476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3128297146821115129}
     m_Modifications:
+    - target: {fileID: 907926830897892345, guid: 65f8a5a782ed17040a04e7a66f8d5831, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2267773151636829345}
     - target: {fileID: 907926830897892346, guid: 65f8a5a782ed17040a04e7a66f8d5831, type: 3}
       propertyPath: levelManager
       value: 
@@ -6901,15 +6905,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4681247650604241443, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.11111111
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4681247650604241443, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.07395834
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4681247650604241443, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.07395833
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4681247650604241628, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6970,6 +6974,11 @@ PrefabInstance:
 --- !u!4 &2267773151636829344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4681247651841000288, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
+  m_PrefabInstance: {fileID: 2267773151636829343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &2267773151636829345 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 377516846, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
   m_PrefabInstance: {fileID: 2267773151636829343}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &3128297146821115129
@@ -7442,7 +7451,7 @@ PrefabInstance:
     - target: {fileID: 8957180741415632073, guid: f2b6855b21227d54dbfdb7d198e73b67, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2267773151636829345}
     m_RemovedComponents: []
     m_AddedGameObjects: []
     m_AddedComponents: []

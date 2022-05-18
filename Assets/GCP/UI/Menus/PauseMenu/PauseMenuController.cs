@@ -22,6 +22,7 @@ namespace GCP.UI.PauseMenu
         private MovingPanel settingsMenuPanel;
 
         private bool shown;
+        private GameInput gameInput;
 
         private void Awake()
         {
@@ -34,6 +35,9 @@ namespace GCP.UI.PauseMenu
 
         private void Start()
         {
+            gameInput = new GameInput();
+            gameInput.Enable();
+            
             menuButtons.OnResumeClicked += Hide;
             menuButtons.OnRestartClicked += levelManager.RestartLevel;
             menuButtons.OnSettingsClicked += TransitionToSettings;
@@ -47,7 +51,7 @@ namespace GCP.UI.PauseMenu
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (gameInput.Default.Quit.WasPressedThisFrame())
             {
                 if (shown)
                 {

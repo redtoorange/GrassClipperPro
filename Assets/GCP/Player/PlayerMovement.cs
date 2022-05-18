@@ -14,33 +14,38 @@ namespace GCP.Player
         private Rigidbody2D rigidbody;
         private Animator animator;
 
+        private GameInput gameInput;
+        private Vector2 movementInput;
         private bool hasControl = true;
 
         private void Start()
         {
+            gameInput = new GameInput();
+            gameInput.Enable();
             animator = GetComponent<Animator>();
             rigidbody = GetComponent<Rigidbody2D>();
         }
 
-        public void EnableControl(bool hasControl = false)
+        public void EnableControl(bool pHasControl = false) => hasControl = pHasControl;
+
+        private void Update()
         {
-            this.hasControl = hasControl;
+            if (hasControl)
+            {
+                movementInput = gameInput.Default.Movement.ReadValue<Vector2>();
+            }
+            else
+            {
+                movementInput = Vector2.zero;
+            }
         }
 
         private void FixedUpdate()
         {
-            if (hasControl)
-            {
-                steeringAmount = -Input.GetAxis("Horizontal");
-                speed = Input.GetAxis("Vertical") * accelerationPower;
-            }
-            else
-            {
-                steeringAmount = 0;
-                speed = 0;
-            }
+            steeringAmount = -movementInput.x;
+            speed = movementInput.y * accelerationPower;
 
-            animator.SetFloat("Speed", Input.GetAxis("Vertical"));
+            animator.SetFloat("Speed", movementInput.y);
 
             if (Mathf.Abs(speed) > 0)
             {

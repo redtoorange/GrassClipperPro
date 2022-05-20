@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GCP.Camera;
 using GCP.Player;
 using GCP.Utility;
 using UnityEngine;

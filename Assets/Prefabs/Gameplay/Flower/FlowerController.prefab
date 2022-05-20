@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2180783736869793527
 MonoBehaviour:
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeAmplitudeGain: 1
   shakeFrequencyGain: 1
-  shakeDuration: 0
+  shakeDuration: 0.25
 --- !u!82 &6213758359802107547
 AudioSource:
   m_ObjectHideFlags: 0

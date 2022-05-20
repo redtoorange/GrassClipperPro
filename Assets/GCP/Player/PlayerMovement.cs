@@ -7,6 +7,9 @@ namespace GCP.Player
         [SerializeField] private float accelerationPower = 5.0f;
         [SerializeField] private float steeringPower = 5.0f;
 
+        [field: SerializeField]
+        public float Speed { get; private set; }
+
         private float steeringAmount;
         private float speed;
         private float direction;
@@ -45,6 +48,18 @@ namespace GCP.Player
             steeringAmount = -movementInput.x;
             speed = movementInput.y * accelerationPower;
 
+            UpdateAnimation();
+
+            direction = Mathf.Sign(Vector2.Dot(rigidbody.velocity, rigidbody.GetRelativeVector(Vector2.up)));
+
+            rigidbody.rotation += steeringAmount * steeringPower * rigidbody.velocity.magnitude * direction;
+            rigidbody.AddRelativeForce(Vector2.up * speed);
+            rigidbody.AddRelativeForce(-Vector2.right * rigidbody.velocity.magnitude * steeringAmount / 2.0f);
+        }
+
+        private void UpdateAnimation()
+        {
+            // TODO Move this code to an animation controller script
             animator.SetFloat("Speed", movementInput.y);
 
             if (Mathf.Abs(speed) > 0)
@@ -55,17 +70,8 @@ namespace GCP.Player
             {
                 animator.SetBool("IsWalking", false);
             }
-
-            direction = Mathf.Sign(Vector2.Dot(rigidbody.velocity, rigidbody.GetRelativeVector(Vector2.up)));
-
-            rigidbody.rotation += steeringAmount * steeringPower * rigidbody.velocity.magnitude * direction;
-            rigidbody.AddRelativeForce(Vector2.up * speed);
-            rigidbody.AddRelativeForce(-Vector2.right * rigidbody.velocity.magnitude * steeringAmount / 2.0f);
         }
 
-        public float GetSpeed()
-        {
-            return speed;
-        }
+        public float GetSpeed() => speed;
     }
 }

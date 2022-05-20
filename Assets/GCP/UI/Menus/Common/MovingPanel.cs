@@ -1,7 +1,7 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace GCP.UI.MainMenu
+namespace GCP.UI.Menus.Common
 {
     public class MovingPanel : MonoBehaviour
     {

@@ -2,7 +2,8 @@
 using GCP.Player;
 using GCP.Timer;
 using GCP.UI;
-using GCP.UI.PauseMenu;
+using GCP.UI.HUD;
+using GCP.UI.Menus.PauseMenu;
 using UnityEngine;
 
 namespace GCP.Orchestration

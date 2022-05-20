@@ -1,7 +1,7 @@
-using GCP.UI.Health;
+using GCP.UI.HUD.Health;
 using UnityEngine;
 
-namespace GCP.UI
+namespace GCP.UI.HUD
 {
     public class GameHudController : MonoBehaviour
     {

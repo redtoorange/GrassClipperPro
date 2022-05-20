@@ -1,7 +1,8 @@
 using GCP.Orchestration;
+using GCP.UI.Menus.Common;
 using UnityEngine;
 
-namespace GCP.UI.MainMenu
+namespace GCP.UI.Menus.MainMenu
 {
     public class MainMenuController : MonoBehaviour
     {

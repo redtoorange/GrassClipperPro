@@ -1,9 +1,9 @@
 ﻿using System;
 using GCP.Orchestration;
-using GCP.UI.MainMenu;
+using GCP.UI.Menus.Common;
 using UnityEngine;
 
-namespace GCP.UI.PauseMenu
+namespace GCP.UI.Menus.PauseMenu
 {
     public class PauseMenuController : MonoBehaviour
     {

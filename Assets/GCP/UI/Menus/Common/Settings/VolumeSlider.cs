@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GCP.UI.Settings
+namespace GCP.UI.Menus.Common.Settings
 {
     public class VolumeSlider : MonoBehaviour
     {

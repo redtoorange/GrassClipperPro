@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GCP.UI.PauseMenu
+namespace GCP.UI.Menus.PauseMenu
 {
     public class PauseMenuButtonPanel : MonoBehaviour
     {

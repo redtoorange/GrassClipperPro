@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 377516846}
   - component: {fileID: 377516848}
   - component: {fileID: 377516847}
+  - component: {fileID: 5765443666402768853}
   m_Layer: 0
   m_Name: HudCamera
   m_TagString: MainCamera
@@ -62,7 +63,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.27314815
+    y: 0.23888889
     width: 0.14791667
     height: 0.14791666
   near clip plane: 0.3
@@ -142,6 +143,18 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!114 &5765443666402768853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377516845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88022680a564ea9850922a28605585b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4681247650507496369
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,6 +167,7 @@ GameObject:
   - component: {fileID: 4681247650507496371}
   - component: {fileID: 4681247650507496370}
   - component: {fileID: 4681247650507496365}
+  - component: {fileID: 7006104837092227529}
   m_Layer: 0
   m_Name: VirutalCamera
   m_TagString: Untagged
@@ -239,6 +253,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73257f74489847fbb9fb14088fae7f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7006104837092227529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4681247650507496369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debdcdc995b24ed5a10c83d0360218c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4681247650604241440
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +329,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.27314815
+    y: 0.23888889
     width: 0.14791667
     height: 0.14791666
   near clip plane: 0.3

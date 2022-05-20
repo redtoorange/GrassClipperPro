@@ -1,5 +1,6 @@
 using System;
 using GCP.UI;
+using GCP.UI.HUD;
 using UnityEngine;
 
 namespace GCP.Timer

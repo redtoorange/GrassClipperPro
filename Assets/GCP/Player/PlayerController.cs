@@ -14,15 +14,5 @@ namespace GCP.Player
             playerAudioController = GetComponent<PlayerAudioController>();
             playerMovement = GetComponent<PlayerMovement>();
         }
-
-        private void Start()
-        {
-            Debug.Log("Hello, World!");
-            Debug.Log("Hello, World!");
-            Debug.Log("Hello, World!");
-            Debug.Log("Hello, World!");
-            Debug.Log("Hello, World!");
-            Debug.Log("Hello, World!");
-        }
     }
 }

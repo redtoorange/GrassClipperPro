@@ -14150,7 +14150,7 @@ VFXRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1136970267
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
 --- !u!2083052967 &2030038381
 VisualEffect:

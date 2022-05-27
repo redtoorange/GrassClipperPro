@@ -1,4 +1,4 @@
-﻿using GCP.UI.Settings;
+﻿using GCP.UI.Menus.Common.Settings;
 using UnityEngine;
 using UnityEngine.Audio;
 

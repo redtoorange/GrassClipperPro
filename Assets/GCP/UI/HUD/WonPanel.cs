@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace GCP.UI
+namespace GCP.UI.HUD
 {
     public class WonPanel : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GCP.UI.Health
+namespace GCP.UI.HUD.Health
 {
     public class HealthBar : MonoBehaviour
     {

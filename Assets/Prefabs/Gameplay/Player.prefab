@@ -233,6 +233,12 @@ CircleCollider2D:
   m_ForceReceiveLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -345,7 +351,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1136970267
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eec1bfda3095ae943aeb28b8edede7b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -429,7 +435,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1136970267
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -1926543626, guid: e51444b130783a14abca8ef3c72a2a2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -492,11 +498,11 @@ Rigidbody2D:
   m_GameObject: {fileID: 9051762464624415129}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 7.5
-  m_AngularDrag: 1
+  m_LinearDrag: 10
+  m_AngularDrag: 10
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -506,7 +512,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!60 &979127205518607634
@@ -530,6 +536,12 @@ PolygonCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
@@ -609,7 +621,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accelerationPower: 10
-  steeringPower: 0.5
+  velocityDeadZone: 0.01
+  movingTurningPower: 1
+  staticTurningPower: 5
 --- !u!114 &2274005464666275293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,6 +711,7 @@ PrefabInstance:
       value: FlowerRight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2819831e6449c734fa524e9523db1aaf, type: 3}
@@ -767,6 +782,7 @@ PrefabInstance:
       value: FlowerLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2819831e6449c734fa524e9523db1aaf, type: 3}
@@ -837,6 +853,7 @@ PrefabInstance:
       value: GrassLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cdcc760f9c11474d898e3ad8c76692b, type: 3}
@@ -907,6 +924,7 @@ PrefabInstance:
       value: GrassRight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cdcc760f9c11474d898e3ad8c76692b, type: 3}

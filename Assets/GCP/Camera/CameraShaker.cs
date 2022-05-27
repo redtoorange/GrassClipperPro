@@ -1,7 +1,7 @@
 ﻿using Cinemachine;
 using UnityEngine;
 
-namespace GCP.Utility
+namespace GCP.Camera
 {
     public class CameraShaker : MonoBehaviour
     {
@@ -10,13 +10,13 @@ namespace GCP.Utility
 
         [SerializeField] private float shakeAmplitudeGain = 1.0f;
         [SerializeField] private float shakeFrequencyGain = 1.0f;
-        [SerializeField] private float shakeDuration;
+        [SerializeField] private float shakeDuration = 0.25f;
         private float elapsed;
         private bool shaking = false;
 
         private void Start()
         {
-            virtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
+            virtualCamera = FindObjectOfType<GameCamera>().GetComponent<CinemachineVirtualCamera>();
             noise = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         }
 

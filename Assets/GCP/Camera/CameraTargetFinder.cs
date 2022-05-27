@@ -2,7 +2,7 @@
 using GCP.Player;
 using UnityEngine;
 
-namespace GCP.Utility
+namespace GCP.Camera
 {
     public class CameraTargetFinder : MonoBehaviour
     {

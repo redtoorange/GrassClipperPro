@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GCP.UI.MainMenu
+namespace GCP.UI.Menus.MainMenu
 {
     public class MainMenuMain : MonoBehaviour
     {

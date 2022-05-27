@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace GCP.UI.Health
+namespace GCP.UI.HUD.Health
 {
     public class HealthBarSlot : MonoBehaviour
     {

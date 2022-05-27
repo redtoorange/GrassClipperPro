@@ -1,5 +1,6 @@
 using GCP.Timer;
 using GCP.UI;
+using GCP.UI.HUD;
 using UnityEngine;
 
 namespace GCP.Orchestration

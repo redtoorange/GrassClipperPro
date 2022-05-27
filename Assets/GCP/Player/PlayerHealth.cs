@@ -1,5 +1,5 @@
 ﻿using System;
-using GCP.UI.Health;
+using GCP.UI.HUD.Health;
 using UnityEngine;
 
 namespace GCP.Player

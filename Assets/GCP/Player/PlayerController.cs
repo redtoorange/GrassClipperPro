@@ -14,9 +14,5 @@ namespace GCP.Player
             playerAudioController = GetComponent<PlayerAudioController>();
             playerMovement = GetComponent<PlayerMovement>();
         }
-
-        private void Start()
-        {
-        }
     }
 }

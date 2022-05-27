@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using GCP.UI;
+using GCP.UI.HUD;
 using UnityEngine;
 
 namespace GCP.Grass

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace GCP.Player
@@ -12,11 +13,23 @@ namespace GCP.Player
         [SerializeField] private float movingTurningPower = 5.0f;
         [SerializeField] private float staticTurningPower = 10.0f;
 
+        public Action OnStopMower;
+        public Action OnStartMower;
 
-        private float linearVelocity = 0.0f;
+        public enum MowerMovementState
+        {
+            Running,
+            Off
+        }
+
+        private MowerMovementState currentMowerMovementState = MowerMovementState.Off;
+
+
         private Rigidbody2D rigidbody;
         private Animator animator;
         private GameInput gameInput;
+
+        private float linearVelocity = 0.0f;
         private bool hasControl = true;
         private float turningInput;
         private float accelerationInput;
@@ -57,14 +70,22 @@ namespace GCP.Player
         {
             if (Mathf.Abs(accelerationInput) > 0)
             {
+                if (currentMowerMovementState == MowerMovementState.Off)
+                {
+                    currentMowerMovementState = MowerMovementState.Running;
+                    OnStartMower?.Invoke();
+                }
+
                 float accelerationAmount = accelerationInput * accelerationPower;
                 rigidbody.AddRelativeForce(new Vector2(0, accelerationAmount * Time.fixedDeltaTime),
                     ForceMode2D.Impulse);
             }
 
-            if (rigidbody.velocity.sqrMagnitude < velocityDeadZone)
+            if (currentMowerMovementState == MowerMovementState.Running && rigidbody.velocity.sqrMagnitude < velocityDeadZone)
             {
                 rigidbody.velocity = Vector2.zero;
+                currentMowerMovementState = MowerMovementState.Off;
+                OnStopMower?.Invoke();
             }
         }
 

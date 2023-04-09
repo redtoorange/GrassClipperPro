@@ -7,7 +7,7 @@ namespace GCP.Player
         private PlayerHealth playerHealth;
         private PlayerAudioController playerAudioController;
         private PlayerMovement playerMovement;
-
+        
         private void Awake()
         {
             playerHealth = GetComponent<PlayerHealth>();

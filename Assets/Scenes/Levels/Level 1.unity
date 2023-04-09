@@ -67,9 +67,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -145,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 9051762465309493806}
     - target: {fileID: 4681247650507496371, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7777776
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4681247650604241443, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
@@ -216,6 +213,7 @@ PrefabInstance:
       value: Cameras
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dc71276d9388654b853de29d13d1851, type: 3}
@@ -562,6 +560,7 @@ TilemapCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723659361}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -577,9 +576,16 @@ TilemapCollider2D:
   m_ForceReceiveLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -626,6 +632,7 @@ TilemapCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953960146}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -641,9 +648,16 @@ TilemapCollider2D:
   m_ForceReceiveLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -4222,6 +4236,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62679fee01fb48c49a1a07bbdb26166d, type: 3}
@@ -4344,6 +4359,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62679fee01fb48c49a1a07bbdb26166d, type: 3}
@@ -4456,6 +4472,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62679fee01fb48c49a1a07bbdb26166d, type: 3}
@@ -5401,6 +5418,7 @@ PrefabInstance:
       value: -13.497499
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65f8a5a782ed17040a04e7a66f8d5831, type: 3}
@@ -5504,6 +5522,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3550995003286455176, guid: b4db47ddbb5656a4586648fe7cb8ee8d, type: 3}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6881b43fbbc4bc45a9b1fa5a2e0b272, type: 3}
@@ -5584,6 +5603,7 @@ PrefabInstance:
       value: GrassController
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5108339526384552304, guid: 06b0409f2f545854b90d1fa3b78ac1da, type: 3}
       insertIndex: -1
@@ -5969,6 +5989,7 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2b6855b21227d54dbfdb7d198e73b67, type: 3}
@@ -6049,6 +6070,7 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f227484417c3d443898160931a85f5e, type: 3}
